@@ -52,7 +52,6 @@ foreach (char s in str_all)
             Array.Resize(ref massive_Char_expression, massive_Char_expression.Length - 2);
             Array.Copy(expression_after, 0, massive_Char_expression, 0, expression_after.Length);
             break;
-            break;
 
         case '-':
             Array.Resize(ref expression_after, massive_Char_expression.Length - 2);
@@ -61,7 +60,6 @@ foreach (char s in str_all)
             Array.Copy(massive_Char_expression, Array.IndexOf(massive_Char_expression, "-") + 2, expression_after, Array.IndexOf(massive_Char_expression, "-"), expression_after.Length - Array.IndexOf(massive_Char_expression, "-"));
             Array.Resize(ref massive_Char_expression, massive_Char_expression.Length - 2);
             Array.Copy(expression_after, 0, massive_Char_expression, 0, expression_after.Length);
-            break;
             break;
     }
 }
